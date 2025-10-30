@@ -528,16 +528,6 @@ footer p {
         font-size: 1.5rem;
     }
 }
-/* --- Enhanced: Lighter Text, 3D Heading, Glow Card Hover --- */
-
-/* 3D effect for headings */
-header h1,
-.section h2 {
-    text-shadow:
-        2px 2px 8px #22D3EE,
-        0 6px 24px #0F172A,
-        0 1px 0 #fff;
-}
 
 /* Make tagline and navigation links pure white for high contrast */
 header p,
