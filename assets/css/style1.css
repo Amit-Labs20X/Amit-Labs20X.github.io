@@ -1,16 +1,16 @@
-/* --- Variables (Dark Tech Palette for 2025) --- */
+/* --- Variables (Sleek Cyber Sunset Palette) --- */
 :root {
-    --background-color: #0F172A;
-    --primary-color: #22D3EE;
-    --secondary-color: #64748B;
-    --accent-color: #64ffda;
-    --text-color: #d4eefd;
-    --text-light-color: #b1bfd8;
-    --card-bg-color: rgba(255, 255, 255, 0.12);
+    --background-color: #1B1F3B;
+    --primary-color: #FF6F61;
+    --secondary-color: #FFD3B6;
+    --accent-color: #FF6F61;
+    --text-color: #EAEAEA;
+    --text-light-color: #B0B8CE;
+    --card-bg-color: rgba(255, 223, 196, 0.12);
     --font-heading: 'Satoshi', 'Aeonik', 'Clash Display', 'Playfair Display', serif;
     --font-body: 'Inter', 'Lato', 'DM Sans', sans-serif;
     --border-radius-lg: 16px;
-    --shadow-lg: 0 16px 40px rgba(34, 211, 238, 0.18);
+    --shadow-lg: 0 16px 40px rgba(255, 111, 97, 0.18);
 }
 
 /* --- Base & Reset --- */
@@ -60,7 +60,7 @@ header {
     background: linear-gradient(120deg, var(--background-color) 60%, var(--primary-color) 100%);
     padding: 80px 0;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(34, 211, 238, 0.2);
+    box-shadow: 0 10px 40px rgba(255, 111, 97, 0.25);
     border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
 }
 
@@ -101,9 +101,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(34, 211, 238, 0.1);
+    background-color: rgba(27, 31, 59, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 10px rgba(255, 111, 97, 0.15);
     border-bottom: 1px solid var(--secondary-color);
 }
 
@@ -197,13 +197,13 @@ nav ul li a:focus::after {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 7px solid rgba(255,255,255,0.2);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 7px solid rgba(255, 223, 196, 0.3);
+    box-shadow: 0 15px 40px rgba(255, 111, 97, 0.5);
     transition: transform 0.4s ease;
 }
 
 .profile-photo:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 .about-text {
@@ -216,7 +216,7 @@ nav ul li a:focus::after {
 /* --- Projects Grid --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 1100px;
     margin: 0 auto;
@@ -236,7 +236,7 @@ nav ul li a:focus::after {
 
 .project-card:hover {
     transform: translateY(-20px) scale(1.05);
-    box-shadow: 0 32px 70px rgba(34, 211, 238, 0.26);
+    box-shadow: 0 32px 70px rgba(255, 111, 97, 0.35);
 }
 
 .project-card img {
@@ -278,40 +278,48 @@ nav ul li a:focus::after {
 }
 
 .btn {
-    background: var(--primary-color);
-    color: var(--background-color);
     padding: 14px 28px;
     border-radius: 20px;
     font-weight: 700;
     letter-spacing: 0.9px;
     text-align: center;
-    box-shadow: 0 0 14px var(--primary-color);
-    transition: all 0.3s ease;
-    flex: 1;
     cursor: pointer;
+    transition: all 0.3s ease;
     border: none;
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: 1rem;
 }
 
-.btn:hover,
-.btn:focus {
+/* Documentation button - primary coral */
+.btn-doc {
+    background: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 14px var(--primary-color);
+}
+
+.btn-doc:hover,
+.btn-doc:focus {
     background: var(--accent-color);
     color: var(--background-color);
     box-shadow: 0 0 20px var(--accent-color);
     transform: scale(1.07);
 }
 
-.btn-secondary {
+/* Dashboard button - secondary beige outline */
+.btn-dashboard {
     background: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     box-shadow: none;
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
-    background: var(--primary-color);
+.btn-dashboard:hover,
+.btn-dashboard:focus {
+    background: var(--secondary-color);
     color: var(--background-color);
-    box-shadow: 0 0 22px var(--primary-color);
+    box-shadow: 0 0 22px var(--secondary-color);
+    transform: scale(1.07);
 }
 
 /* --- Skills Section --- */
@@ -332,7 +340,7 @@ nav ul li a:focus::after {
 
 .skill-column {
     padding: 0 25px;
-    border-right: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255, 223, 196, 0.15);
 }
 
 .skill-column:last-child {
@@ -367,7 +375,7 @@ nav ul li a:focus::after {
     font-size: 1.1rem;
     color: var(--text-color);
     padding: 14px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 223, 196, 0.15);
     padding-left: 30px;
     position: relative;
 }
@@ -389,6 +397,7 @@ nav ul li a:focus::after {
 /* --- Contact Form --- */
 #contact .container {
     max-width: 800px;
+    padding: 0 20px;
 }
 
 .contact-form {
@@ -420,23 +429,23 @@ nav ul li a:focus::after {
     font-family: var(--font-body);
     border-radius: 8px;
     border: none;
-    background: rgba(255,255,255, 0.15);
+    background: rgba(255, 223, 196, 0.08);
     color: var(--text-color);
-    box-shadow: inset 0 0 6px rgba(255,255,255, 0.1);
+    box-shadow: inset 0 0 6px rgba(255, 223, 196, 0.12);
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: var(--text-light-color);
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    background: rgba(255,255,255, 0.25);
-    box-shadow: 0 0 8px var(--accent-color);
+    background: rgba(255, 223, 196, 0.14);
+    box-shadow: 0 0 12px var(--accent-color);
 }
 
 .contact-form button.btn {
@@ -457,7 +466,7 @@ footer {
     text-align: center;
     padding: 45px 0;
     font-size: 1rem;
-    border-top: 1px solid rgba(100, 116, 139, 0.2);
+    border-top: 1px solid rgba(255, 223, 196, 0.1);
 }
 
 footer p {
@@ -482,7 +491,7 @@ footer p {
     .skill-column {
         padding: 0 15px;
         border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 223, 196, 0.1);
     }
     .skill-column:last-child {
         border-bottom: none;
@@ -509,17 +518,13 @@ footer p {
         padding: 25px;
         gap: 40px;
     }
-
-    #contact .container {
-        padding: 0 20px;
-    }
 }
 
 @media (max-width: 480px) {
     header h1 {
         font-size: 2.4rem;
     }
-    .btn, .btn-secondary {
+    .btn, .btn-secondary, .btn-doc, .btn-dashboard {
         padding: 12px 20px;
         font-size: 1rem;
     }
