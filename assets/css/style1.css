@@ -1,5 +1,5 @@
 /* --- Variables (Dark Tech Palette for 2025) --- */
-/* :root {
+:root {
     --background-color: #0F172A;
     --primary-color: #22D3EE;
     --secondary-color: #64748B;
@@ -11,27 +11,7 @@
     --font-body: 'Inter', 'Lato', 'DM Sans', sans-serif;
     --border-radius-lg: 16px;
     --shadow-lg: 0 16px 40px rgba(34, 211, 238, 0.18);
-} */
-:root {
-    /* Backgrounds */
-    --background-color: #181A20;         /* Very dark gray, softer than pure black */
-    --card-bg-color: rgba(34, 36, 42, 0.93); /* Slightly lighter/darker gray for glass effect */
-
-    /* Text */
-    --text-color: #F3F4F6;               /* Crisp off-white, passes WCAG AA/AAA */
-    --text-light-color: #B6C4D0;         /* Medium-light gray, good for subtext */
-
-    /* Accents & Interactive */
-    --primary-color: #48C9FF;            /* Accessible blue-cyan, good for links/buttons */
-    --secondary-color: #476582;          /* Muted steel blue for borders/cards */
-    --accent-color: #7FFFD4;             /* Accessible aqua accent for highlights */
-
-    /* Other */
-    --border-radius-lg: 16px;
-    --shadow-lg: 0 18px 44px rgba(72, 201, 255, 0.18); /* shadow uses new primary accent */
-    --font-heading: 'Satoshi', 'Aeonik', 'Clash Display', 'Playfair Display', serif;
-    --font-body: 'Inter', 'Lato', 'DM Sans', sans-serif;
-}
+} 
 /* --- Base & Reset --- */
 * {
     margin: 0;
