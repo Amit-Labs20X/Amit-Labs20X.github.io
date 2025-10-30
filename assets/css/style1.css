@@ -57,7 +57,7 @@ a:focus {
 
 /* --- Header --- */
 header {
-    background: linear-gradient(120deg, var(--background-color) 60%, var(--primary-color) 100%);
+    background: linear-gradient(120deg, var(--primary-color) 35%, var(--background-color) 100%);
     padding: 80px 0;
     text-align: center;
     box-shadow: 0 10px 40px rgba(34, 211, 238, 0.2);
@@ -200,6 +200,7 @@ nav ul li a:focus::after {
     border: 7px solid rgba(255,255,255,0.2);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s ease;
+    filter: brightness(0.85) contrast(1.05) saturate(0.9);
 }
 
 .profile-photo:hover {
