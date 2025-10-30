@@ -216,7 +216,7 @@ nav ul li a:focus::after {
 /* --- Projects Grid --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 1100px;
     margin: 0 auto;
