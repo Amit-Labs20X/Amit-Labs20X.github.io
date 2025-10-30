@@ -57,7 +57,7 @@ a:focus {
 
 /* --- Header --- */
 header {
-    background: linear-gradient(120deg, var(--primary-color) 35%, var(--background-color) 100%);
+    background: linear-gradient(120deg, var(--primary-color) 0%, var(--background-color) 100%);
     padding: 80px 0;
     text-align: center;
     box-shadow: 0 10px 40px rgba(34, 211, 238, 0.2);
